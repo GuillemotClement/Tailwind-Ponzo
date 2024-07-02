@@ -24,9 +24,46 @@
         <div class="max-w-[1000px] h-[800px] bg-white border-2 border-black flex flex-auto">
           <div class="flex-auto p-12">
             <h1 class="font-medium text-3xl mb-4">Parlons de votre epargne</h1>
-            <h3 class="text-slate-700 text-lg">Nous doublons votre investissement chaque annee et sans aucun risque</h3>
+            <h3 class="text-slate-700 text-lg mb-4">Nous doublons votre investissement chaque annee et sans aucun risque</h3>
             <!-- pour que le formulaire occupe tout l'espace on lui passe un flex-auto -->
-            <form class="" action="#">
+            <form class="grid grid-cols-2 gap-6" action="#">
+              <div class="flex flex-col gap-y-1">
+                <label for="firstname" class="text-sm font-bold">Prenom</label>
+                <input type="text" id="firstname" class="rounded">
+              </div>
+              <div class="flex flex-col gap-y-1">
+                <label for="name" class="text-sm font-bold">Nom</label>
+                <input type="text" id="name" class="rounded">
+              </div>
+              <div class="flex flex-col gap-y-1">
+                <label for="mail" class="text-sm font-bold">Email</label>
+                <input type="email" id="mail" class="rounded">
+              </div>
+              <div class="flex flex-col gap-y-1">
+                <label for="phone" class="text-sm font-bold">Telephone</label>
+                <input type="tel" id="phone" class="rounded">
+              </div>
+              <div class="flex flex-col gap-y-1 col-span-2">
+                <label class="text-sm font-bold mb-4">Estimation du capital</label>
+                <label for="25">
+                  <input type="radio" name="capital" id="25" class="mr-2 text-black">
+                  moins de 25 000$
+                </label>
+                <label for="25-50">
+                  <input type="radio" name="capital" id="25-50" class="mr-2 text-black">
+                  entre 25 000$ et 50 000$
+                </label>
+                <label for="50">
+                  <input type="radio" name="capital" id="50" class="mr-2 text-black">
+                  plus de 50 000$
+                </label>
+              </div>
+              <div class="flex flex-col gap-y-1 col-span-2">
+                <label class="text-sm font-bold mb-4" for="message">Message</label>
+                <textarea cols="30" rows="5" class="rounded"></textarea>
+              </div>
+              <button class="text-center py-2 bg-blue-500 hover:bg-blue-600 active:bg-blue-700 transition-colors font-medium text-white rounded col-span-2 shadow-xl">Confier nous votre argent</button>
+              <p class="text-xs col-span-2">En soumettant le formulaire, vous acceptez les <a href="#" class=" font-bold">conditions d'utilisations</a>.</p>
             </form>
           </div>  
           <!-- on ajoute un bg-cover pour centrer l'image de background -->
