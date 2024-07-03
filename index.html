@@ -13,35 +13,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body class="">
-    <div class="flex flex-col h-screen">
-      <header class="flex items-center px-4 py-2 border-b-2 border-black">
+    <div class="flex flex-col h-screen dark:text-slate-200">
+      <header class="flex items-center px-4 py-2 border-b-2 border-black dark:bg-gray-800 ">
         <i class="fa-solid fa-mug-hot"></i>
         <h2 class="font-bold text-2xl ml-2">Ponzo</h2>
       </header>
       <!-- pour la div prenne tout l'espace dispo -->
        <!-- on vient y placer une image de fond -->
-      <div class="flex-auto bg-[url('./assets/pictures/cryptobg.jpeg')] bg-cover flex justify-center items-center">
-        <div class="max-w-[1000px] h-[800px] bg-white border-2 border-black flex flex-auto">
-          <div class="flex-auto p-12">
+      <div class="flex-auto bg-[url('./assets/pictures/cryptobg.jpeg')] dark:bg-[url('./assets/pictures/cryptobgdark.jpeg')] bg-cover flex justify-center items-center">
+        <div class="max-w-[1000px] dark:bg-slate-800 bg-white border-2 border-black flex flex-auto flex-col sm:flex-row flex-col-reverse ">
+          <div class="flex-auto sm:p-12 p-6">
             <h1 class="font-medium text-3xl mb-4">Parlons de votre epargne</h1>
-            <h3 class="text-slate-700 text-lg mb-4">Nous doublons votre investissement chaque annee et sans aucun risque</h3>
+            <h3 class="text-slate-700 sm:text-lg mb-4 dark:text-slate-200">Nous doublons votre investissement chaque annee et sans aucun risque</h3>
             <!-- pour que le formulaire occupe tout l'espace on lui passe un flex-auto -->
             <form class="grid grid-cols-2 gap-6" action="#">
-              <div class="flex flex-col gap-y-1">
+              <div class="flex flex-col gap-y-1 col-span-2 sm:col-span-1">
                 <label for="firstname" class="text-sm font-bold">Prenom</label>
-                <input type="text" id="firstname" class="rounded">
+                <input type="text" id="firstname" class="rounded dark:bg-slate-900 dark:border-0">
               </div>
-              <div class="flex flex-col gap-y-1">
+              <div class="flex flex-col gap-y-1 col-span-2 sm:col-span-1">
                 <label for="name" class="text-sm font-bold">Nom</label>
-                <input type="text" id="name" class="rounded">
+                <input type="text" id="name" class="rounded dark:bg-slate-900 dark:border-0">
               </div>
-              <div class="flex flex-col gap-y-1">
+              <div class="flex flex-col gap-y-1 col-span-2 sm:col-span-1">
                 <label for="mail" class="text-sm font-bold">Email</label>
-                <input type="email" id="mail" class="rounded">
+                <input type="email" id="mail" class="rounded dark:bg-slate-900 dark:border-0">
               </div>
-              <div class="flex flex-col gap-y-1">
+              <div class="flex flex-col gap-y-1 col-span-2 sm:col-span-1">
                 <label for="phone" class="text-sm font-bold">Telephone</label>
-                <input type="tel" id="phone" class="rounded">
+                <input type="tel" id="phone" class="rounded dark:bg-slate-900 dark:border-0">
               </div>
               <div class="flex flex-col gap-y-1 col-span-2">
                 <label class="text-sm font-bold mb-4">Estimation du capital</label>
@@ -60,14 +60,14 @@
               </div>
               <div class="flex flex-col gap-y-1 col-span-2">
                 <label class="text-sm font-bold mb-4" for="message">Message</label>
-                <textarea cols="30" rows="5" class="rounded"></textarea>
+                <textarea cols="30" rows="5" class="rounded dark:bg-slate-900 dark:border-0"></textarea>
               </div>
               <button class="text-center py-2 bg-blue-500 hover:bg-blue-600 active:bg-blue-700 transition-colors font-medium text-white rounded col-span-2 shadow-xl">Confier nous votre argent</button>
               <p class="text-xs col-span-2">En soumettant le formulaire, vous acceptez les <a href="#" class=" font-bold">conditions d'utilisations</a>.</p>
             </form>
           </div>  
           <!-- on ajoute un bg-cover pour centrer l'image de background -->
-          <div class="bg-[url('./assets/pictures/bitcoin.jpeg')] basis-72 bg-cover"></div>
+          <div class="bg-[url('./assets/pictures/bitcoin.jpeg')] sm:basis-72 bg-cover basis-32 bg-center"></div>
         </div>
       </div>
     </div>
